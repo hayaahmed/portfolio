@@ -356,6 +356,7 @@ body {
                         width: 80px;
                         height: 80px;
                         border-radius: 50%;
+
                     }
                 }
             }
@@ -394,7 +395,7 @@ body {
 
             .box {
                 background-color: $bg-color;
-                padding: 10px;
+                padding: 20px;
                 padding-top: 2px;
                 position: relative;
                 overflow: hidden;
@@ -405,8 +406,10 @@ body {
                 .image {
                     position: relative;
                     overflow: hidden;
+                    padding-top: 10px;
                     cursor: pointer;
                     margin-bottom: 15px;
+
 
                     &:hover {
 
@@ -414,7 +417,7 @@ body {
 
                         .overlay {
 
-                            @include overlay($main-color, 0.4);
+                            @include overlay($main-color, 0.1);
                         }
 
                         img {
@@ -430,6 +433,7 @@ body {
                         border-radius: 10px;
                         width: 100%;
                         height: 380px;
+                        // object-fit: fill;
                         display: block;
                         transition: transform 0.5s;
                     }
@@ -464,7 +468,7 @@ body {
                 p {
                     margin-top: 20px;
                     color: $sec-color;
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                     line-height: 1.7;
 
                     span {
